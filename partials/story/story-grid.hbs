@@ -1,7 +1,7 @@
 <article class="story u-flex u-relative {{#if featured}}featured{{/if}}">
     <div class="story-image u-relative u-overflowHidden u-backgroundColorGrayLight">
         {{!-- Background Image --}}
-        <a href="{{url}}" class="story-img-bg lazy-load-image u-absolute0 u-block image-hover u-bgCover" data-src="{{#if feature_image}}{{feature_image}}{{else}}{{asset "images/not-image.jpg"}}{{/if}}"></a>
+        <a aria-label="featureimage" href="{{url}}" class="story-img-bg lazy-load-image u-absolute0 u-block image-hover u-bgCover" data-src="{{#if feature_image}}{{feature_image}}{{else}}{{asset "images/not-image.jpg"}}{{/if}}"></a>
         {{!-- Media Type - partials/helper/helper-media-type.hbs --}}
         {{> "helper/helper-media-type"}}
     </div>
@@ -12,7 +12,7 @@
 
         {{!-- Title --}}
         <h2 class="u-fontSize20 u-lineHeightTight u-marginBottom10">
-            <a href="{{url}}" class="u-relative zindex4">{{title}}</a>
+            <a aria-label="{{title}}" href="{{url}}" class="u-relative zindex4">{{title}}</a>
         </h2>
 
         {{!-- excerpt --}}

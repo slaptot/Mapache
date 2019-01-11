@@ -9,6 +9,13 @@
     {{!-- Mobile Meta --}}
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset "pwa/apple-touch-icon.png"}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="{{asset "pwa/site.webmanifest"}}">
+    <link rel="mask-icon" href="{{asset "pwa/safari-pinned-tab.svg"}}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     {{!-- Styles'n'Scripts --}}
     {{!-- <link rel="stylesheet" type="text/css" href="{{asset "styles/main.css"}}"/> --}}
     {{!-- All Styles Compress --}}
@@ -63,5 +70,13 @@
 
     {{!--  Fonts => Roboto && Merriweather  && Roboto Mono--}}
     <script>WebFontConfig ={google:{families:['Roboto:300,500,700','Merriweather:300,400,700'{{#is "post"}},'Roboto+Mono'{{/is}}]}};(function(){var wf=document.createElement('script');wf.src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf,s);})();</script>
+    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('sw.js')
+                .then(function() { console.log("Service Worker Registered"); });
+        }
+    </script>
 </body>
 </html>

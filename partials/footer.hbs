@@ -6,7 +6,7 @@
                 {{#if @blog.facebook}}<a class="godo-tracking i-facebook" data-event-category="Footer" data-event-action="Social Media" data-event-label="Facebook" data-event-non-interaction="true" title="Facebook {{@blog.facebook}}" href="{{facebook_url}}" target="_blank" rel="noopener noreferrer"></a>{{/if}}
                 {{#if @blog.twitter}}<a class="godo-tracking i-twitter" data-event-category="Footer" data-event-action="Social Media" data-event-label="Twitter" data-event-non-interaction="true" title="Twitter {{@blog.twitter}}" href="{{twitter_url}}" target="_blank" rel="noopener noreferrer"></a>{{/if}}
                 {{!-- Subscribe BTN for modal newsletter --}}
-                {{#if @labs.subscribers}}<a href="#" class="subscribe-toggle modal-toggle u-relative i-email u-floatRight godo-tracking" data-event-category="Footer" data-event-action="Social Media" data-event-label="Newsletter" data-event-non-interaction="true"></a>{{/if}}
+                {{#if @labs.subscribers}}<a aria-label="socialmedia" href="#" class="subscribe-toggle modal-toggle u-relative i-email u-floatRight godo-tracking" data-event-category="Footer" data-event-action="Social Media" data-event-label="Newsletter" data-event-non-interaction="true"></a>{{/if}}
             </aside>
             {{!-- Footer Menu --}}
             <ul class="footer-menu u-textUppercase u-textAlignCenter u-marginTop20 u-hide"></ul>

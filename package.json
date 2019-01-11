@@ -1,16 +1,15 @@
 {
-  "name": "mapache-godofredoninja",
-  "description": "mapache theme for ghost by @GodoFredoNinja",
-  "demo": "https://godofredo.ninja",
-  "version": "3.0.3",
+  "name": "comomolaeso",
+  "description": "based on mapache theme for ghost by @GodoFredoNinja",
+  "demo": "https://comomolaeso.es",
+  "version": "1.0.0",
   "engines": {
     "ghost": ">=2.0.0"
   },
   "license": "CC BY-NC-SA 4.0",
   "author": {
-    "name": "GodoFredoNinja",
-    "email": "hello@godofredo.ninja",
-    "url": "https://godofredo.ninja"
+    "name": "Alberto",
+    "email": "slaptot@gmail.com"
   },
   "gpm": {
     "type": "theme",
@@ -24,15 +23,14 @@
     "ghost",
     "theme",
     "ghost-theme",
-    "GodoFredoNinja"
+    "slaptot"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/godofredoninja/mapache"
+    "url": "https://github.com/slaptot/Mapache"
   },
   "bugs": {
-    "url": "https://github.com/godofredoninja/mapache/issues",
-    "email": "hello@godofredo.ninja"
+    "url": "https://github.com/slaptot/Mapache/issues"
   },
   "config": {
     "posts_per_page": 14
